@@ -3,83 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="网红吃瓜官方入口 - 加入吃瓜圈，掌握第一手爆料！">
-  <meta name="keywords" content="网红, 吃瓜, 爆料, 投稿, 商务合作, Telegram群, tg群, 吃瓜圈">
-  <title>网红吃瓜官方入口</title>
+  <title>网红吃瓜官方入口 - 加入吃瓜圈，掌握第一手爆料！</title>
+
+  <!-- SEO 元信息 -->
+  <meta name="description" content="网红吃瓜官方入口：最新网红爆料、热门吃瓜事件、圈内资讯第一时间掌握。点击加入官方 Telegram 群，获取独家爆料！">
+  <meta name="keywords" content="网红吃瓜,吃瓜入口,吃瓜圈,网红爆料,热门事件,吃瓜视频,八卦新闻">
+  <meta name="robots" content="index, follow">
+
+  <!-- OG 社交分享 -->
+  <meta property="og:title" content="网红吃瓜官方入口">
+  <meta property="og:description" content="加入吃瓜圈，掌握第一手爆料！">
+  <meta property="og:image" content="https://nahi72841-spec.github.io/chigua-official/banner.jpg">
+  <meta property="og:url" content="https://nahi72841-spec.github.io/chigua-official/">
+  <meta name="theme-color" content="#ff007f">
+
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
-      background-color: #0a0a0a;
+      background: radial-gradient(circle at top, #0a0a0a 0%, #000 100%);
       color: #fff;
+      font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+      text-align: center;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
+      align-items: center;
       overflow: hidden;
-      text-align: center;
     }
-
     h1 {
-      font-size: 2.2rem;
-      color: #ff2e8f;
-      text-shadow: 0 0 20px rgba(255, 51, 153, 0.9);
-      margin-bottom: 10px;
-      letter-spacing: 1px;
+      font-size: 2rem;
+      color: #ff007f;
+      text-shadow: 0 0 15px #ff007f;
+      margin-bottom: 0.5em;
+      animation: glow 2s ease-in-out infinite alternate;
     }
-
-    .subline {
-      color: #ff9ad9;
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff007f; }
+      to { text-shadow: 0 0 25px #ff55aa; }
+    }
+    .subtitle {
       font-size: 1.1rem;
-      margin-bottom: 25px;
-      text-shadow: 0 0 12px rgba(255, 102, 204, 0.7);
+      color: #ffc4e0;
+      margin-bottom: 1em;
     }
-
     p {
-      font-size: 1.15rem;
-      color: #ccc;
-      margin-bottom: 40px;
+      font-size: 1rem;
+      color: #ddd;
+      margin-bottom: 2em;
     }
-
-    a.join-btn {
+    .button {
       display: inline-block;
-      background: linear-gradient(90deg, #ff0066, #ff33cc);
+      background: #ff007f;
       color: #fff;
-      text-decoration: none;
-      font-weight: bold;
       font-size: 1.2rem;
-      padding: 15px 45px;
+      font-weight: bold;
+      padding: 0.9em 2em;
       border-radius: 50px;
-      box-shadow: 0 0 25px rgba(255, 51, 153, 0.8);
+      text-decoration: none;
+      box-shadow: 0 0 20px #ff007f;
       transition: all 0.3s ease;
+      animation: pulse 2s infinite;
     }
-
-    a.join-btn:hover {
-      transform: scale(1.07);
-      box-shadow: 0 0 45px rgba(255, 51, 153, 1);
+    .button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px #ff33aa;
     }
-
+    @keyframes pulse {
+      0% { box-shadow: 0 0 20px #ff007f; }
+      50% { box-shadow: 0 0 40px #ff55aa; }
+      100% { box-shadow: 0 0 20px #ff007f; }
+    }
     footer {
       position: absolute;
       bottom: 20px;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #888;
     }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 1.8rem; }
-      .subline { font-size: 1rem; }
-      p { font-size: 1rem; }
-      a.join-btn { padding: 12px 30px; font-size: 1rem; }
-    }
   </style>
+
+  <!-- 自动跳转 -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://t.me/hlcg888";
+    }, 3000);
+  </script>
 </head>
+
 <body>
   <h1>网红吃瓜官方入口</h1>
-  <div class="subline">⬛️ 欢迎投稿 / 商务合作</div>
+  <div class="subtitle">欢迎投稿 / 商务合作</div>
   <p>加入吃瓜圈，掌握第一手爆料！</p>
-  <a href="https://t.me/hlcg888" class="join-btn" target="_blank">🚀 点击加入 Telegram 群</a>
+  <a class="button" href="https://t.me/hlcg888" target="_blank">🚀 点击加入 Telegram 群</a>
   <footer>© 2025 网红吃瓜 | 官方唯一入口</footer>
 </body>
 </html>
