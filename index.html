@@ -58,6 +58,8 @@
       list-style: none;
       display: flex;
       gap: 30px;
+      margin: 0;
+      padding: 0;
     }
 
     nav ul li a {
@@ -71,7 +73,7 @@
       color: #fff;
     }
 
-    /* 顶部空白占位（避免导航遮挡内容） */
+    /* 顶部空白，用来避开 fixed 导航 */
     .nav-space {
       height: 80px;
       width: 100%;
@@ -80,20 +82,20 @@
     /* 主区域 */
     .hero {
       text-align: center;
-      padding: 80px 20px;
+      padding: 140px 20px 80px; /* ✅ 修复过靠上的问题 */
     }
 
     .hero h1 {
       font-size: 32px;
       color: #ff4fae;
       text-shadow: 0 0 18px #ff4fae;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     .hero p {
       font-size: 16px;
       color: #ddd;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
     }
 
     .btn-main {
@@ -114,10 +116,16 @@
       box-shadow: 0 0 28px #ff33aa;
     }
 
-    /* “最新精选”区块 */
+    /* “最新精选” */
     .section {
       padding: 40px 20px;
       text-align: center;
+    }
+
+    .section h2 {
+      color: #ff4fae;
+      font-size: 24px;
+      margin-bottom: 20px;
     }
 
     .card-box {
@@ -164,14 +172,14 @@
   <nav>
     <div class="logo">网红吃瓜官方入口</div>
     <ul>
-      <li><a href="hot.html">今日爆料</a></li>
-      <li><a href="New.html">热门合集</a></li>
+      <li><a href="new.html">今日爆料</a></li>
+      <li><a href="hot.html">热门合集</a></li>
       <li><a href="contact.html">投稿合作</a></li>
       <li><a href="about.html">关于本站</a></li>
     </ul>
   </nav>
 
-  <!-- 顶部空白占位避免被导航遮住 -->
+  <!-- 空白占位 -->
   <div class="nav-space"></div>
 
   <!-- 主内容 -->
@@ -184,29 +192,31 @@
 
   <!-- 最新精选 -->
   <section class="section">
-    <h2 style="color:#ff4fae;">最新精选</h2>
+    <h2>最新精选</h2>
 
     <div class="card-box">
-      <div class="card">
+      <div class="card" onclick="location.href='posts/post-1.html'">
         <b>主播热舞</b><br>主播私密热舞视频
       </div>
 
-      <div class="card">
+      <div class="card" onclick="location.href='posts/post-2.html'">
         <b>网红黑料</b><br>网红黑料每天更新
       </div>
 
-      <div class="card">
+      <div class="card" onclick="location.href='posts/post-3.html'">
         <b>另类调教</b><br>满足你独特的品味
       </div>
     </div>
   </section>
 
   <footer>
-    © 2025 网红吃瓜 · 本站仅提供信息整理与舆情研判
+    © 2025 网红吃瓜 · 本站仅提供信息整理
   </footer>
 
 </body>
 </html>
+
+
 
 
 
