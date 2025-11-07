@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nahi72841-spec.github.io/chigua-official/sitemap.xml
